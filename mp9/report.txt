@@ -1,0 +1,5 @@
+First of all, configure the region of the cluster we want to setup(This can be the same as the project itself, or can be configured on GUI), build the Docker image with gcr.io. then create the cluster
+For Google Clod Platform, if the previous step succeed, copy the credential with command "gcloud container clusters get-credentials [CLUSTER_NAME]". Otherwise Kubernetes would failed with the message "The connection to the server localhost:8080 was refused - did you specify the right host or port?" whenever we dealing with kubectl
+Write yaml file for deployment pod. In the file, the attribute "kind" should be set to "deployment", and the name of the image file should match the name of the image we created previously.
+Create the deployment pod.
+Write yaml file for load balancer. Noted that the ip address for load balancer will be assigned by GCP so we don't have to specified.

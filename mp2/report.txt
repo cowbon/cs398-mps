@@ -1,0 +1,2 @@
+# In approximately 50-100 words, characterize your observations for 3 configurations of reducers
+I've tried to run 1, 5, 10 reducers while the rest remain unchanged for the library problem. Interestingly, the more reducer imployed in the computation, the more time it takes to get the job done. Virtually each entry pertaining to time increases as there are more reducers, and the increase also applies to memory usage. Also, the actual number of reducers launched may slightly differ from the configuration (When the number of reducer is set to 10)
